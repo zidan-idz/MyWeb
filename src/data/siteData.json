@@ -1,0 +1,83 @@
+{
+    "identity": {
+        "name": "Zidan",
+        "role": "Web & Game Developer",
+        "introStart": "Enjoys Building Systems with Clean, Efficient, and",
+        "introHighlight": "Pythonic Code"
+    },
+    "systemNotes": [
+        {
+            "label": "OS",
+            "value": "Windows 11 & ArchLinux"
+        },
+        {
+            "label": "Starship",
+            "value": "On (ZSH)"
+        },
+        {
+            "label": "Editor",
+            "value": "VS Code"
+        },
+        {
+            "label": "Workflow",
+            "value": "Trunk Based"
+        }
+    ],
+    "principles": {
+        "approach": {
+            "label": "Approach",
+            "value": "Explicit > Implicit"
+        },
+        "focus": {
+            "label": "Focus",
+            "value": "Maintainability"
+        },
+        "description": "Code should be readable. Whether it’s complex backend logic or intricate game mechanics, clarity and simplicity always come first."
+    },
+    "languages": [
+        {
+            "name": "Python",
+            "status": "General Purpose",
+            "isPrimary": true
+        },
+        {
+            "name": "JavaScript",
+            "status": "Fullstack",
+            "isPrimary": false
+        },
+        {
+            "name": "C++",
+            "status": "Game Systems",
+            "isPrimary": false
+        },
+        {
+            "name": "PHP",
+            "status": "Backend",
+            "isPrimary": false
+        }
+    ],
+    "webStack": [
+        "HTML & CSS",
+        "Tailwind",
+        "Bootstrap",
+        "Astro",
+        "Laravel",
+        "Django"
+    ],
+    "dataStack": [
+        "MySQL",
+        "PostgreSQL",
+        "SQLite",
+        "Supabase",
+        "Firebase"
+    ],
+    "tools": [
+        "Git",
+        "VS Code",
+        "Linux"
+    ],
+    "gameDev": [
+        "Godot",
+        "Unity"
+    ]
+}
