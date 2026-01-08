@@ -11,8 +11,12 @@ const localStats = {
 const supabaseUrl = "https://vljgneamkzqptnxsoimu.supabase.co";
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZsamduZWFta3pxcHRueHNvaW11Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1NTMwNDcsImV4cCI6MjA4MzEyOTA0N30.1sZWyZ2uLOIHD-w3P5_cr3tGLpSmt2BNRLXwzXBcaeU";
 let supabase = null;
-{
-  supabase = createClient(supabaseUrl, supabaseKey);
+try {
+  if (supabaseUrl && supabaseKey) {
+    supabase = createClient(supabaseUrl, supabaseKey);
+  }
+} catch (e) {
+  console.error("[DB] Gagal inisialisasi Supabase:", e.message);
 }
 function log(message) {
 }

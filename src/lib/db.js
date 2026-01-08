@@ -7,10 +7,13 @@ const supabaseKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
 
 // Inisialisasi Supabase (jika kredensial ada)
 let supabase = null;
-if (supabaseUrl && supabaseKey) {
-  supabase = createClient(supabaseUrl, supabaseKey);
+try {
+  if (supabaseUrl && supabaseKey) {
+    supabase = createClient(supabaseUrl, supabaseKey);
+  }
+} catch (e) {
+  console.error('[DB] Gagal inisialisasi Supabase:', e.message);
 }
-
 // Logger helper
 function log(message) {
   if (DEV_CONFIG.DEBUG_LOG) {

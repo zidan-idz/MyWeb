@@ -10,7 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/node": "^9.5.1",
     "@astrojs/sitemap": "^3.6.1",
     "@astrojs/vercel": "^9.0.2",
     "@supabase/supabase-js": "^2.89.0",
