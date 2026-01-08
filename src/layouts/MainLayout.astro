@@ -14,6 +14,33 @@ const { title = "Zidan | System Information Student" } = Astro.props;
             name="description"
             content="Portfolio of Muhammad Raid Zaidani. System Information Student focusing on rational web development and logical problem solving."
         />
+        <meta
+            name="keywords"
+            content="Muhammad Raid Zaidani, Zidan IDz, ZeyShyy, Web Developer, Game Developer, System Information, Python, Astro, Portfolio"
+        />
+        <meta name="author" content="Muhammad Raid Zaidani" />
+        <link rel="canonical" href={Astro.site} />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={Astro.site} />
+        <meta property="og:title" content={title} />
+        <meta
+            property="og:description"
+            content="Portfolio of Muhammad Raid Zaidani. System Information Student focusing on rational web development and logical problem solving."
+        />
+        <meta property="og:image" content="/og-image.jpg" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={Astro.site} />
+        <meta property="twitter:title" content={title} />
+        <meta
+            property="twitter:description"
+            content="Portfolio of Muhammad Raid Zaidani. System Information Student focusing on rational web development and logical problem solving."
+        />
+        <meta property="twitter:image" content="/og-image.jpg" />
+
         <link rel="icon" type="image/webp" href="/icon.webp" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +52,32 @@ const { title = "Zidan | System Information Student" } = Astro.props;
             href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
             rel="stylesheet"
         />
+        <link rel="sitemap" href="/sitemap-index.xml" />
+
+        <!-- JSON-LD Structured Data -->
+        <script type="application/ld+json" is:inline>
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Muhammad Raid Zaidani",
+                "alternateName": ["Zidan IDz", "ZeyShyy"],
+                "url": "https://zidan-idz.my.id",
+                "image": "https://zidan-idz.my.id/icon.webp",
+                "sameAs": [
+                    "https://www.facebook.com/muhammadraidzaidani",
+                    "https://www.instagram.com/zidan_idz",
+                    "https://t.me/Zidan_IDz",
+                    "https://github.com/zidan-idz",
+                    "https://www.linkedin.com/in/muhammad-raid-zaidani"
+                ],
+                "jobTitle": "Web & Game Developer",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Freelance"
+                },
+                "description": "System Information Student focusing on rational web development and logical problem solving."
+            }
+        </script>
 
         <!-- Cegah Flash Tema (FOUC) -->
         <script is:inline>

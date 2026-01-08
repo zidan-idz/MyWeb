@@ -19,6 +19,7 @@ pnpm-debug.log*
 
 # mynotes
 NOTE.md
+/docs
 
 # macOS-specific files
 .DS_Store
